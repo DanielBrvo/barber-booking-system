@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barberia Premium</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <a href="#" class="logo">Barberia Premium</a>
+            <a href="#hero" class="logo">Barberia Premium</a>
 
             <ul class="nav-links">
                 <li><a href="#hero">Inicio</a></li>
@@ -30,7 +31,7 @@
         <section id="servicios" class="servicios">
             <h2>Nuestros Servicios</h2>
 
-            <div class="cards">
+            <div class="servicios-grid">
                 <div class="servicio">
                     <h3>Corte de Cabello</h3>
                     <p>45 min</p>
@@ -54,19 +55,19 @@
             </div>
         </section>
 
-        <section id="reservar" class="reservar">
+        <section id="reservas" class="reservas">
             <h2>Reserva tu hora</h2>
 
-            <form class="form-reservas" action="" method="post">
+            <form class="form-reservas">
                 <div class="form-group">
-                    <label for="fname">Nombre</label>
-                    <input type="text" id="fname" name="nombre" required>
-                    <small id="error-fname"></small>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <small class="error-name"></small>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
-                    <small id="error-email"></small>
+                    <small class="error-email"></small>
                 </div>
                 <div class="form-group">
                     <label for="servicio">Servicio</label>
@@ -82,14 +83,14 @@
                 <div class="form-group">
                     <label for="date">Fecha</label>
                     <input type="date" id="date" name="fecha" required>
-                    <small id="error-date"></small>
+                    <small class="error-date"></small>
                 </div>
                 <div class="form-group">
                     <label for="time">Hora</label>
                     <input type="time" id="time" name="hora" required>
-                    <small id="error-time"></small>
+                    <small class="error-time"></small>
                 </div>
-                <button type="submit">Confirmar Reserva</button>
+                <button type="submit" class="btn">Confirmar Reserva</button>
                 <p id="form-sent"></p>
             </form>
         </section>
