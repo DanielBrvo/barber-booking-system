@@ -60,7 +60,7 @@ section{
 }
 /*Hero*/
 .hero{
-    background: url(hero.jpg) center/cover no-repeat;
+    background: url(img/hero.jpg) center/cover no-repeat;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -103,6 +103,10 @@ section{
    transform: translateY(-3px);
 }
 /*Servicios*/
+section h2{
+    font-size: 2rem;
+    text-align: center;
+}
 .servicios-grid{
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -133,10 +137,6 @@ section{
     font-weight: bold;
     font-size: 1.2rem;
 }
-.servicios h2{
-    font-size: 2rem;
-    text-align: center;
-}
 /*Form*/
 .reservas{
     text-align: center;
@@ -147,10 +147,6 @@ section{
     padding: 30px;
     border-radius: 10px;
     background-color: #1a1a1a;
-}
-.reservas h2{
-    font-size: 2rem;
-    text-align: center;
 }
 .form-group{
     display: flex;

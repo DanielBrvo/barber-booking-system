@@ -73,7 +73,7 @@
                 <div class="form-group">
                     <label for="servicio">Servicio</label>
                     <select name="servicio" id="servicio" required>
-                        <option value="" disabled selected>Selecciona un Servicio</option>
+                        <option value="" disabled selected hidden >Selecciona un Servicio</option>
                         <option value="corte">Corte de Cabello</option>
                         <option value="barba">Barba Completa</option>
                         <option value="facial">Tratamiento Facial</option>
@@ -83,16 +83,16 @@
                 </div>
                 <div class="form-group">
                     <label for="date">Fecha</label>
-                    <input type="date" id="date" name="fecha" required>
+                    <input type="date" id="fecha" name="fecha" required>
                     <small class="error-date"></small>
                 </div>
                 <div class="form-group">
                     <label for="time">Hora</label>
-                    <input type="time" id="time" name="hora" required>
+                    <input type="time" id="hora" name="hora" required>
                     <small class="error-time"></small>
                 </div>
                 <button type="submit" class="btn">Confirmar Reserva</button>
-                <p id="form-sent"></p>
+                <p id="form-sent" role="alert"></p>
             </form>
         </section>
     </main>
